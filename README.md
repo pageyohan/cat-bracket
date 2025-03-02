@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# 🐱 Cat Bracket - Tournoi de GIFs de Chats
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Cat GIF](https://media.giphy.com/media/BzyTuYCmvSORqs1ABM/giphy.gif)
 
-## Available Scripts
+## À propos du projet
 
-In the project directory, you can run:
+**Cat Bracket** est une application web interactive permettant d'organiser un tournoi à élimination directe pour déterminer le meilleur GIF de chat ! Ce projet utilise React pour le frontend et Firebase pour la persistance des données, permettant à plusieurs utilisateurs de voter et de suivre les résultats en temps réel.
 
-### `npm start`
+## ✨ Fonctionnalités
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Système de bracket complet** : Organise automatiquement les GIFs en matchs à élimination directe
+- **Multi-utilisateurs** : Permet à 3 utilisateurs (Mastiche, Robiche et Yoyo) de voter indépendamment
+- **Progression par tour** : Les GIFs gagnants avancent automatiquement au tour suivant
+- **Suivi des scores** : Système de points pour évaluer la popularité de chaque GIF
+- **Visualisation des résultats** : Affichage du classement et des matchs en cours
+- **Interface intuitive** : Simple à utiliser, même pour les non-initiés
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🔧 Technologies utilisées
 
-### `npm test`
+- **React** : Pour l'interface utilisateur interactive
+- **Firebase Firestore** : Pour stocker les données du tournoi et les votes
+- **React Router** : Pour la navigation entre les différentes vues
+- **Vercel** : Pour le déploiement et l'hébergement
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Démarrage rapide
 
-### `npm run build`
+### Pour les utilisateurs
+1. Accédez à l'application déployée sur [cat-bracket.vercel.app](https://cat-bracket.vercel.app)
+2. Sélectionnez votre nom d'utilisateur (Mastiche, Robiche ou Yoyo)
+3. Votez pour vos GIFs préférés dans chaque match
+4. Consultez les résultats et suivez la progression du tournoi !
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Pour les développeurs
+1. Clonez ce dépôt
+   ```bash
+   git clone https://github.com/pageyohan/cat-bracket.git
+   cd cat-bracket
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Installez les dépendances
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Configurez Firebase
+   - Créez un projet Firebase sur [console.firebase.google.com](https://console.firebase.google.com)
+   - Créez un fichier `src/firebase.js` avec votre configuration
 
-### `npm run eject`
+4. Lancez l'application en mode développement
+   ```bash
+   npm start
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🏆 Comment fonctionne le tournoi
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Tour initial** : Les 15 GIFs sont répartis aléatoirement en matchs
+2. **Votes** : Chaque utilisateur vote pour son GIF préféré dans chaque match
+3. **Élimination** : Les GIFs perdants sont éliminés selon les votes reçus
+4. **Progression** : Les tours se succèdent jusqu'à ce qu'il ne reste qu'un seul GIF champion !
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 👥 Contributeurs
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- [Yohan Page](https://github.com/pageyohan) - Développeur principal
+- Mastiche - Fournisseur officiel de GIFs de chats
+- Robiche - Testeur en chef et amateur de GIFs félins
+- Yoyo - Expert en sélection de contenu félin
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+*Fait avec ❤️ et beaucoup de GIFs de chats*
